@@ -1,0 +1,12 @@
+name = "passportkey-sync"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "passportkey"
+# Replace with the id printed by: npx wrangler d1 create passportkey
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# Optional: require an invite code to create a vault on this server.
+# Set it as a secret instead of committing it:  npx wrangler secret put INVITE_CODE
